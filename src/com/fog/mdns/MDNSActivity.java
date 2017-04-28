@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MDNSActivity extends Activity {
 	private String TAG = "---main---";
 	
 	private String _SERV_NAME = "_easylink._tcp.local.";
@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		context = MainActivity.this;
+		context = MDNSActivity.this;
 
 		initView();
 		mdns = new MDNS(context);
